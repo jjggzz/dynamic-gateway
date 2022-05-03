@@ -19,11 +19,10 @@ import javax.annotation.Resource;
 public class RefreshRouteListener implements MessageListener {
 
     @Resource
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String,Object> redisTemplate;
 
     @Resource
     private ApplicationEventPublisher publisher;
-
 
     @Override
     public void onMessage(Message message, byte[] bytes) {

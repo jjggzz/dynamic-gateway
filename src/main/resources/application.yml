@@ -4,7 +4,7 @@ server:
 spring:
   redis:
     database: 0
-    host: 192.168.1.14
+    host: localhost
     port: 6379
     password: redis
     timeout: 2000ms
@@ -15,3 +15,20 @@ spring:
         max-idle: 8
         min-idle: 1
         max-wait: -1ms
+  datasource:
+    url: jdbc:mysql://localhost:3306/gateway?characterEncoding=utf8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      # 连接池最大连接数
+      maximum-pool-size: 12
+      # 空闲时保持最小连接数
+      minimum-idle: 5
+      # 空闲连接存活时间
+      idle-timeout: 300000
+      # 连接超时时间
+      connection-timeout: 20000
+      # 测试sql
+      connection-test-query: select 1
+

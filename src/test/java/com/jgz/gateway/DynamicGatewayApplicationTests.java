@@ -10,12 +10,11 @@ import javax.annotation.Resource;
 class DynamicGatewayApplicationTests {
 
     @Resource
-    private RedisTemplate redisTemplate;
+    private RedisTemplate<String,Object> redisTemplate;
 
     @Test
     void contextLoads() {
         redisTemplate.convertAndSend("redis.refreshRoute","refresh");
-
     }
 
 }

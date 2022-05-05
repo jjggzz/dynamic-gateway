@@ -22,17 +22,17 @@
         </javaTypeResolver>
 
         <!-- 生成文件位置 -->
-        <javaModelGenerator targetPackage="com.jgz.gateway.model"
+        <javaModelGenerator targetPackage="com.jgz.gateway.manage.model"
                             targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
-        <sqlMapGenerator targetPackage="com.jgz.gateway.mapper"
+        <sqlMapGenerator targetPackage="com.jgz.gateway.manage.mapper"
                          targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <javaClientGenerator type="XMLMAPPER"
-                             targetPackage="com.jgz.gateway.mapper" targetProject="src/main/java">
+                             targetPackage="com.jgz.gateway.manage.mapper" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 

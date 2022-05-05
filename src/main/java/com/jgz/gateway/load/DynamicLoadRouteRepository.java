@@ -1,6 +1,6 @@
 package com.jgz.gateway.load;
 
-import com.jgz.gateway.service.ReloadService;
+import com.jgz.gateway.manage.service.ReloadService;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinitionRepository;
 import org.springframework.context.annotation.DependsOn;

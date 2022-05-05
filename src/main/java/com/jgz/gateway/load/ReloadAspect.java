@@ -1,6 +1,6 @@
 package com.jgz.gateway.load;
 
-import com.jgz.gateway.service.ReloadService;
+import com.jgz.gateway.manage.service.ReloadService;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;

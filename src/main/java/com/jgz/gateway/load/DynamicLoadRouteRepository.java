@@ -3,7 +3,6 @@ package com.jgz.gateway.load;
 import com.jgz.gateway.manage.service.ReloadService;
 import org.springframework.cloud.gateway.route.RouteDefinition;
 import org.springframework.cloud.gateway.route.RouteDefinitionRepository;
-import org.springframework.context.annotation.DependsOn;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -17,7 +16,6 @@ import java.util.List;
  * @date 2022/4/29 16:16
  * @description
  */
-@DependsOn("routeServiceImpl")
 @Component
 public class DynamicLoadRouteRepository implements RouteDefinitionRepository {
 
